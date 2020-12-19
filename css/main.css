@@ -1,0 +1,27 @@
+
+/* Segundo div de todas las paginas */
+/* Evita amontonamiento */
+.principal{
+    margin-top:95px;
+}
+
+/* Sobre mi */
+.about-title{
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    flex-direction: column;
+    text-align: center;
+}
+.foto-small-about{
+    display:none;
+}
+
+@media screen and (max-width: 639px){
+   .foto-small-about{
+        display:block;
+   }
+   .foto-large-about{
+        display:none;
+   }
+}
