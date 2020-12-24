@@ -3,6 +3,7 @@
 /* Evita amontonamiento */
 .principal{
     margin-top:95px;
+    margin-bottom:35px ;
 }
 
 /* Sobre mi */
@@ -80,4 +81,43 @@ div#imagen {
 
 #uno, #dos, #tres{
   display: none;
+}
+
+/* _-------------------------- */
+/* Carrera */
+.video{
+  width: 420px;
+  height: auto;
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+.lista{
+  width:420px;
+  height:370px;
+}
+
+@media screen and (max-width: 1176px){
+  .lista{
+    width:420px;
+    height:220px;
+  }
+}
+
+@media screen and (max-width: 879px){
+  .video{
+    width: 75%;
+  }
+  .lista{
+    width:75%;
+    height:auto;
+  }
+}
+
+@media screen and (max-width: 639px){
+  .lista{
+   margin: 25px 0 30px 10%;
+  }
+  .video{
+    margin-left: 10%;
+   }
 }
