@@ -6,7 +6,8 @@
     margin-bottom:35px ;
 }
 
-/* Sobre mi */
+/* #################################### */
+              /* Sobre mi */
 .about-title{
     display: flex;
     justify-content: center;
@@ -18,16 +19,10 @@
     display:none;
 }
 
-@media screen and (max-width: 639px){
-   .foto-small-about{
-        display:block;
-   }
-   .foto-large-about{
-        display:none;
-   }
-}
 
 
+/* ############################################################### */
+                              /* Music */
 /* Texto a las imagenes de music */
 /* Invisible texto */
 div#imagen {
@@ -83,8 +78,8 @@ div#imagen {
   display: none;
 }
 
-/* _-------------------------- */
-/* Carrera */
+/* ######################################################### */
+                  /* Carrera */
 .video{
   width: 420px;
   height: auto;
@@ -96,7 +91,34 @@ div#imagen {
   height:370px;
 }
 
+.titulo-carrera{
+  margin-top: 20px;
+}
+
+/* ############################ */
+        /*  Portafolio */
+
+.space{
+  margin-bottom: 15px;
+}
+
+
+/* ############################################# */
+              /* Blog */
+
+  .premios li{
+    background: rgb(192, 197, 192);
+    margin-bottom: 10px;
+    color: rgb(37, 36, 36);
+    padding-left: 10px;
+
+  }
+
+/* ############################################ */
+/* Estilo responsivo (Maqutación liquida) */
+
 @media screen and (max-width: 1176px){
+  /* Carrera */
   .lista{
     width:420px;
     height:220px;
@@ -104,6 +126,7 @@ div#imagen {
 }
 
 @media screen and (max-width: 879px){
+  /* Carrera */
   .video{
     width: 75%;
   }
@@ -114,10 +137,20 @@ div#imagen {
 }
 
 @media screen and (max-width: 639px){
+  /* Sobre Mi */
+.foto-small-about{
+   display:block;
+}
+.foto-large-about{
+   display:none;
+}
+
+/* Carrera */
   .lista{
-   margin: 25px 0 30px 10%;
+    margin: 25px 0 30px 10%;
   }
   .video{
     margin-left: 10%;
-   }
+  }
+
 }

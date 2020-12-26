@@ -1,3 +1,36 @@
+/*  Noticias */
+.portafolio{
+    background: #000;
+    color:#fff;
+    padding: 15px ;
+  }
+  .noticia{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+  }
+  .noticias{
+    margin-top: 5px;
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .centro{
+    text-align: center;
+    color: rgb(202, 198, 198);
+  }
+  
+  .destacada{
+    margin-left: 5px;
+  }
+  
+
+/* Marca */
 .marca{
     font-size:20px;
     text-align: center;
@@ -51,6 +84,12 @@ tr, td{
     }
 
 @media screen and (max-width: 639px){
+    /* Noticias */
+    /* Portafolio */
+  .space2{
+        margin-top: 15px;
+   } 
+    
     table{
         width: 45%;
     }
