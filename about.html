@@ -5,86 +5,58 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>
-       SOBRE MI  
+      Datos Curiosos
     </title>
-
-    <!-- Estilos Foundation-->
-    <!-- Compressed CSS -->
-    <link rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" 
-        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" 
-        crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" 
-        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" 
-        crossorigin="anonymous"></script>
     
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/main.css">
     <!-- IMPORTS.. -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
     <!-- SCRIPTS PERSONALIZADOS -->
-    <script src="js/cargar_menu.js"></script>
-
-    <!-- CSS modificable -->
-    <link rel="stylesheet" href="css/main.css">
+    <script src="js/cargador.js"></script>
 
 </head>
-    <body>
-        <div class="grid-x">
-            <div class="cell" id="menu">
+<body>
+    
+    <div class="grid-x">
+        <div class="cell" id="menu">
+        </div>
+    </div>
+    <div class="principal" style="margin-bottom: 30px;">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell">
+                    <h1 style="text-align: center;">Datos Curiosos</h1>
+                </div>
+                <!-- buscar imagenes del mismo tamaño -->
+                <div class="cell img-about">
+                   <img src="img/about/uno.jpg" alt="">
+                   <img src="img/about/dos.jpg" alt="">
+                   <img src="img/about/tres.jpg" alt="">
+                   <img src="img/about/cuatro.jpg" alt="">  
+                </div>
+                <div class="cell" style="margin: 20px 0 auto 15%;">
+                    <ol class = "lista" >
+                        <li> Junto a su pareja han formado una de las relaciones más
+                            estables del mundo de las celebridades</li>
+                        <li> Se fue a vivir a Miami con tan solo 8 años</li>
+                        <li> Su primer apoyo musical</li>
+                        <li> Su primera canción fue “Por amarte”</li>
+                        <li> Actor ocasional</li>
+                        <li> Tiene una buena relación con Will Smith</li>
+                        <li> Tiene 9 hermanos en total</li>
+                        <li> Enrique Martínez de Guatemala</li>
+                        <li> Activista en la ONG “Save the Children”</li>
+                        <li> Su famoso lunar</li>
+                    </ol>
+                </div>
             </div>
-        </div>
-        <div  class="grid-container principal">
-            <div class="grid-margin-x grid-x">
-                <div class="cell large-4 medium-12 small-12 about-title">
-                    <h1>Billy Joel</h1>
-                    <h3>Cantante</h3>
-                    <h2>Sobre mi</h2>
-                </div>
-                <div class="cell large-4 medium-6 small-12 foto-large-about">
-                    <img src="img/sobremi.jpg" alt="">
-                </div>
-                <div class="cell large-4 medium-6 small-12">
-                    <p>Después de haber vendido más de 150 millones de discos, 
-                        Billy Joel se ubica como uno de los artistas de grabación 
-                        más populares y artistas más respetados del mundo.</p>
-                    <p>Billy Joel ha tenido 33 éxitos Top 40 y 23 nominaciones al 
-                        Grammy desde que firmó su primer contrato de grabación en 
-                        solitario en 1972. En 1990, fue presentado con un Grammy Legend
-                        Award.
-                    </p>
-                    <p>En 1999 fue incluido en el Salón de la Fama del Rock & Roll y 
-                        recibió la Asociación de la Industria de la Grabación de América. 
-                        Diamond Award, presentado por álbumes que han vendido más de 10
-                        millones de copias.
-                    </p>
-                    <p>Desde su Por primera vez en 1978, Billy ha realizado 46 espectáculos
-                        en el Madison Square Garden, incluidos 12 espectáculos con entradas 
-                        agotadas consecutivas sin precedentes que le han valido a Billy 
-                        un lugar entre los grandes del Garden con una pancarta levantada 
-                        en su honor.
-                    </p>
-                    <p>También rindieron homenaje Garth Brooks, quien interpretó un 
-                        popurrí de “Allentown” y “Goodnight Saigon” y Rufus Wainwright, que 
-                        interpretó dos clásicos de Joel, “New York State of Mind” y “Piano 
-                        Man”. Brendan Urie interpretó “Big Shot”. Tony Bennett presentó el 
-                        tributo.Joel y su banda prepararon una variedad similar de la enorme 
-                        colección de éxitos de Joel para Sydney y Nueva Orleans, y mezclaron 
-                        algunas melodías cuidadosamente seleccionadas para el lugar en cuestión.
-                    </p>
-                    <p>Billy Joel ha lanzado una iniciativa educativa continua para 
-                        proporcionar capital inicial, becas musicales y donaciones a una 
-                        variedad de colegios, universidades y escuelas de música de la costa
-                        este.
-                    </p>
-                </div>
-                <div class="cell small-12 foto-small-about">
-                    <img src="img/billy_sobremiResized.jpg" alt="">
-                </div>
-            </div>    
-        </div>
-            
-        <div id="footer"></div>
-    </body>
+        </div><!-- Container -->
+    </div> <!-- Principal -->
+    <div id="footer"></div>
+    
+</body>
 </html>
