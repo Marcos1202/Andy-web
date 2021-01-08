@@ -1,110 +1,67 @@
-:root{
-    --color1: rgb(0, 0, 0);
-    --color2: rgba(139, 228, 173, 0.877);
-    --color3: rgba(11,194,211, 0.623);
-    --fondo: #f2f2f2;
-    scroll-behavior: smooth; /* esto da un efecto al navegar por la pagina */
+.menu{
+  position: fixed; /* fijo en toda la pagina */
+  /* z-index: 10; */
+  top: 30px;
+  left: 30px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  cursor: pointer; /* para que se ponga la manita */
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu-navegacion{
+  position: fixed;
+  top: 0;
+  left: 0; /* Menu fijado a la derecha */
+  width: 20vw;
+  height: 100%;
+  background-color: #000000; 
+  background-image: linear-gradient(to right, #434343 0%, #000000 100%);
+  display: flex;
+  flex-direction: column; /* Letras en columna */
+  justify-content: space-evenly;
+  align-items: left;
+  transition: transform .3s initial;
+  transform: translate(1110%);
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.5);
  
-  }  
+}
 
-  img{
-    vertical-align: top;
-  }
- 
-  
+.spread{
+  transform: translate(0);
+}
 
-  header{
-    width: 100%;
-    height:60px;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  nav{
-    width: 100%;
-    position: fixed;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
-  }
-  
-  .nav1{
-    background: var(--color1);
-    height: 80px;
-    color:var(--fondo);
-  }
-  
-  .nav2{
-    background: var(--fondo);
-    height:100px;
-    color:var(--color1);
-  }
-  
-  .contenedor-nav{
-    display: flex;
-    margin: auto;
-    width: 90%;
-    justify-content: space-between;
-    align-items: center;
-    height:inherit;
-    overflow: hidden;
-  }
-  
-  nav .enlaces a{
-    display: inline-block;
-    padding: 5px;
-    margin-right: 17px;
-    font-size: 17px;
-    font-weight: 300;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    color: inherit;
-  }
- nav .active {
-    background: #2360a7 !important;
+.menu-navegacion a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  margin-left: 20px;
+}
 
+.menu-navegacion a:hover{
+  color: red;
+  text-decoration: none;
+}
+  .active {
+    background: orange;
+    padding-left:20px ;
+}
+
+@media screen and (max-width:800px){
+  .menu-navegacion{
+      width: 50vw;
+  }
+}
+
+@media screen and (max-width:500px){
+  .menu-navegacion{
+      width: 65vw;
   }
 
-  nav .enlaces a:hover{
-    border-bottom: 3px solid var(--color3);
-    transition: 0.6s;
+  .menu{
+      top: 20px;
+      right: 20px;
   }
-  
-  .logo, .logo img{ height:80px;}
-  
-  .icono{
-    display:none;
-    font-size: 24px;
-    padding: 23.5px 20px;
-  }
-
-  @media screen and (max-width: 940px){
-    .nav2{
-      color: var(--color1);
-    }
-  
-    .icono{
-      display:block;
-      cursor: pointer;
-    }
-  
-    .enlaces{
-      position: fixed;
-      top:80px;
-      background:var(--color1);
-      left: 0;
-      height: 100%;
-      transition: 1s;
-      width: 0;
-      overflow: hidden;
-    }
-  
-    .enlaces a{
-      display: block;
-      width: 100%;
-      height: 40px;
-      padding: 25px;
-      text-align: center;
-      background: var(--color1);
-      color:var(--fondo);
-    }
-  }
-  
+}

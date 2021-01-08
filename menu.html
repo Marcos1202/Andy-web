@@ -1,68 +1,57 @@
-<html>
-    <head>
-    <!-- Estilos Foundation-->
-    <!-- Compressed CSS -->
-    <link rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" 
-        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" 
-        crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
    
+    <title>Menu</title>
+    <!-- foundation -->
+    <link rel="stylesheet" href="css/foundation/foundation.css">
 
-        <!-- Para las redes sociales -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    
-    <!-- Mi CSS -->
-        <link rel="stylesheet" href="css/menu.css">
-    </head>
-    <body>
-        <nav id="nav" class="nav1">
-            <div class="contenedor-nav">
-                <div class="logo">
-                    <img src="img/logo.png" alt="">
-                </div>
-                <div class="enlaces" id="enlaces">
-                    <a href="/index.html" class="btn-header">HOME</a>
-                    <a href="/about.html" class="btn-header">SOBRE MI</a>
-                    <a href="/blog.html" class="btn-header">BLOG</a>
-                    <a href="/carrera.html" class="btn-header">CARRERA</a>
-                    <a href="/portafolio.html" class="btn-header">PORTAFOLIO</a>
-                    <a href="/videos.html" class="btn-header">VIDEOS</a>
-                    <a href="https://www.facebook.com/" target="_blank" class="btn-header">
-                        <i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" class="btn-header">
-                        <i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/" target="_blank" class="btn-header">
-                        <i class="fab fa-youtube"></i></a>
-            </div>
-                <div class="icono" id="open">
-                    <span>&#9776;</span> <!-- menu -->
-                </div>
-            </div>
-        </nav>
+    <!-- Mi css -->
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <header class="header" id="inicio">
+      <img src="img/menu.svg" alt="" class="menu">
+      <nav class="menu-navegacion">
+        <a href="/index.html" class="btn-header"><i class="fa fa-fw fa-home"></i> &nbsp; Biografia</a>
+        <a href="/carrera.html" class="btn-header"><i class="fa fa-music" aria-hidden="true"></i> &nbsp; Carrera musical</a>
+        <a href="/discografia.html" class="btn-header"> <i class="fa fa-headphones" aria-hidden="true"></i> &nbsp;  Discografia</a>
+        <a href="/premios.html" class="btn-header"><i class="fa fa-trophy" aria-hidden="true"></i> &nbsp; Premios</a>
+        <a href="/musica.html" class="btn-header"><i class="fa fa-play" aria-hidden="true"></i> &nbsp; Musica</a>
+        <a href="/about.html" class="btn-header"><i class="fa fa-user" aria-hidden="true"></i> &nbsp; Datos curiosos</a>
+      </nav>
+
+    </header>
+
     <script src="js/menu.js"></script>
-        
     <script>
-        $(function () {
-            setNavigation();
-        });
-        
-        function setNavigation() {
-            var path = window.location.pathname;
-            path = path.replace(/\/$/, "");
-            path = decodeURIComponent(path);
-        
-            $(".contenedor-nav a").each(function () {
-                var href = $(this).attr('href');
-               
-                if (path.substring(0, href.length) === href) {
-                    $(this).closest('a').addClass('active');
-                }
-              
-            });
-        }
-    </script>
-        
-    </body>
+      $(function () {
+          setNavigation();
+      });
+      
+      function setNavigation() {
+          var path = window.location.pathname;
+          path = path.replace(/\/$/, "");
+          path = decodeURIComponent(path);
+      
+          $(".menu-navegacion a").each(function () {
+              var href = $(this).attr('href');
+             
+              if (path.substring(0, href.length) === href) {
+                  $(this).closest('a').addClass('active');
+              }
+            
+          });
+      }
+  </script>
+  <script src="js/foundation/vendor/jquery.js"></script>
+  <script src="js/foundation/vendor/foundation.min.js"></script>
+  <script src="js/foundation/vendor/what-input.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  </body>
 </html>
