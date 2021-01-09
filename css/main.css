@@ -1,13 +1,21 @@
-/* Clases generales */
+:root{
+  --amarillo: #FBF47D;
+  --verde: #66FE82;
+  --color3: #5065C7;
+}
 
+/* Clases generales */
 body{
-  background-color: #4da0e426;
+  background-color: var(--amarillo);
 }
 .centrado{
   margin: 10px auto 10px;
   display: block;
 }
 
+.tex p{
+  font-size: 22px;
+}
 
 /* Segundo div de todas las paginas */
 /* Evita amontonamiento */
@@ -17,16 +25,34 @@ body{
 }
 /* ############################# */
 /* Index (biografia) */
-.tex p{
-  font-size: 22px;
+
+.inicio td{
+  border-style: none;
+  font-size:45px;
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+  background:var(--amarillo);
+  }
+.inicio a{
+  color: var(--color3);
 }
+
+/* ############################ */
+        /*  portafolio */
+
+.space{
+    margin-bottom: 25px;
+}
+
+
 
 /* #################################### */
               /* Datos curiosos  (About)*/
-.img-about img {
-  width: 24%;
-  height: 240px;
-
+.video{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 
@@ -41,68 +67,13 @@ body{
     list-style: none;
 
   }
-
-
-/* ######################################################### */
-                  /* Carrera */
-
-.lista li{
-  font-size: 22px;
-}
-
-
-
-/* ############################ */
-        /*  music */
-
-.space{
-  margin-bottom: 25px;
-}
-
-.space video{
-  width: 75%;
-  height: auto;
-}
-
-
-/* ############################################# */
-              /* Discografia */
-
-.contenedor{
-  width: 180px; 
-  height: auto;
-  margin: 5px 0 10px auto;
-  display: block;
-}
-
 /* ############################################ */
 /* Estilo responsivo (Maqutación liquida) */
 
 
 
 @media screen and (max-width: 879px){
-               /* Datos curiosos  (About)*/
-.img-about img {
-  width: 24%;
-  height: auto;
-
-}
-}
-
-@media screen and (max-width: 639px){
-  /* Bio */
-  .bio p{
-    font-size: 15px;
+  .tex p{
+    font-size: 16px;
   }
-  
-
-/* Carrera */
-.lista li{
-  font-size: 15px;
-}
-.img-about img {
-  width: 20%;
-  height: auto;
-
-}
 }
